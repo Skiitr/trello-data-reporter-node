@@ -11,6 +11,6 @@ To use this application you must first have an exported Trello board in a JSON f
 
 Once you have that you can run the exported trello board with the app.js file by having both files in the same directory, navagating to that directory and running:
 
-'''
+```
 node app.js filename.json
-'''
+```
