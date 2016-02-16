@@ -3,9 +3,9 @@
 
 This application was designed to extract data from an exported Trello .json file. Currently this list of features it displays are as follows:
 
--Shows the total number of cards
--Shows the number of closed cards
--Shows the number of open cards
+- Shows the total number of cards
+- Shows the number of closed cards
+- Shows the number of open cards
 
 To use this application you must first have an exported Trello board in a JSON format and have Node.js installed. For instructions on either of these two things see Trello and/or Node.js documentation.
 
