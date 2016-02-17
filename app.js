@@ -12,6 +12,14 @@ for (var i = 0; i < jsonData.cards.length; i++) {
   if (jsonData.cards[i].closed === true) { closedCards++ }
 }
 
+var closedLists = 0
+for (var z = 0; z < jsonData.lists.length; z++) {
+  if (jsonData.lists[z].closed === true) { closedLists++ }
+}
+
+// Print opening of report
+console.log('------------------------------\n')
+
 // Print the total number of cards/issues
 console.log('This board contains ' + jsonData.cards.length + ' cards:')
 
@@ -19,4 +27,16 @@ console.log('This board contains ' + jsonData.cards.length + ' cards:')
 console.log(closedCards + ' are closed,')
 
 // Print the number of closed cards/issues
-console.log(jsonData.cards.length - closedCards + ' are open.')
+console.log(jsonData.cards.length - closedCards + ' are open.\n')
+
+// Print the total number of lists
+console.log('This board contains ' + jsonData.lists.length + ' lists:')
+
+// Print the number of closed lists
+console.log(closedLists + ' are closed,')
+
+// Print the number of closed lists
+console.log(jsonData.lists.length - closedLists + ' are open.')
+
+// Print closing of report
+console.log('\n------------------------------')
