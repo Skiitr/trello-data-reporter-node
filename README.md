@@ -1,7 +1,7 @@
-##Trello Data Reporter##
-###by Dan Gallagher###
+###Trello Data Reporter for Node.js###
+####by Dan Gallagher####
 
-This application was designed to extract data from an exported Trello .json file. Currently this list of features it displays are as follows:
+This node.js application was designed to extract data from an exported Trello .json file. Currently this list of features it displays are as follows:
 
 - Shows the total number of cards
 - Shows the number of closed cards
