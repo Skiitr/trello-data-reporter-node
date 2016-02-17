@@ -6,7 +6,6 @@ This application was designed to extract data from an exported Trello .json file
 - Shows the total number of cards
 - Shows the number of closed cards
 - Shows the number of open cards
-
 - Shows the total number of lists
 - Shows the number of closed lists
 - Shows the number of open lists
