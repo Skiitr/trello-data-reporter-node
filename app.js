@@ -12,6 +12,7 @@ for (var i = 0; i < jsonData.cards.length; i++) {
   if (jsonData.cards[i].closed === true) { closedCards++ }
 }
 
+// Count the lists that are closed
 var closedLists = 0
 for (var z = 0; z < jsonData.lists.length; z++) {
   if (jsonData.lists[z].closed === true) { closedLists++ }
