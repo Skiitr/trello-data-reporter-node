@@ -1,0 +1,29 @@
+{
+  "name": "trello-data-reporter",
+  "version": "1.0.0",
+  "description": "Data Reporter for Exported Trello Board",
+  "main": "app.js",
+  "dependencies": {
+    "moment": "^2.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skiitr/trello-data-reporter.git"
+  },
+  "keywords": [
+    "trello",
+    "JSON",
+    "node",
+    "moment"
+  ],
+  "author": "Dan Gallagher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skiitr/trello-data-reporter/issues"
+  },
+  "homepage": "https://github.com/Skiitr/trello-data-reporter#readme"
+}
