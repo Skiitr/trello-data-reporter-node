@@ -1,5 +1,7 @@
-// Trello Data Reporter for an exported board in JSON using Node.js
-// by Dan Gallagher
+// Title: --Trello Data Reporter--
+// Description: Data reporter for an exported Trello board in JSON using Node.js
+// Author: Dan Gallagher
+// License: MIT
 
 // Require file system in node, read in the input file, and parse the JSON
 var fs = require('fs')
