@@ -8,6 +8,8 @@ var jsonData = JSON.parse(content)
 // Require moment.js for date manipulation
 var moment = require('moment')
 moment().format('DD-MM-YYYY')
+
+// Set the current time
 var currentTime = moment()
 
 // Count the cards/issues that are closed
@@ -26,18 +28,12 @@ for (var z = 0; z < jsonData.lists.length; z++) {
 var lastMonth = 0
 var oneMonth = 0
 var oneWeek = 0
-var weekDates = ['a day ago', '2 days ago', '3 days ago', '4 days ago', '5 days ago', '6 days ago', '7 days ago']
-var monthDates = ['a day ago', '2 days ago', '3 days ago', '4 days ago', '5 days ago', '6 days ago', '7 days ago',
-                 '8 days ago', '9 days ago', '10 days ago', '11 days ago', '12 days ago', '13 days ago', '14 days ago',
-                 '15 days ago', '16 days ago', '17 days ago', '18 days ago', '19 days ago', '20 days ago', '21 days ago',
-                 '22 days ago', '23 days ago', '24 days ago', '25 days ago', '26 days ago', '27 days ago', '28 days ago',
-                 '29 days ago', '30 days ago', '31 days ago']
 for (var y = 0; y < jsonData.cards.length; y++) {
   if (jsonData.cards[y].closed === true) {
-    var date = moment(jsonData.cards[y].dateLastActivity)
-    if (date.from(currentTime) === 'a month ago') { lastMonth++ }
-    if (weekDates.indexOf(date.from(currentTime)) !== -1) { oneWeek++ }
-    if (monthDates.indexOf(date.from(currentTime)) !== -1) { oneMonth++ }
+    var cardDate = moment(jsonData.cards[y].dateLastActivity)
+    if (cardDate.from(currentTime) === 'a month ago') { lastMonth++ }
+    if (currentTime.diff(cardDate, 'days') < 7) { oneWeek++ }
+    if (currentTime.diff(cardDate, 'days') < 30) { oneMonth++ }
   }
 }
 
